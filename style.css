@@ -1,1 +1,19 @@
+body {
+  font-family: "Georgia", serif;
+  background-color: #f9f4ef;
+  color: #2a2a2a;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
 
+header h1 {
+  font-family: "Courier New", monospace;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+}
