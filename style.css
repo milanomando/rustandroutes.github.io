@@ -1,19 +1,85 @@
+/* Reset some defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body & font */
 body {
   font-family: "Georgia", serif;
   background-color: #f9f4ef;
   color: #2a2a2a;
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
   padding: 20px;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 header h1 {
   font-family: "Courier New", monospace;
   color: #333;
+  font-size: 2.5em;
 }
 
-img {
+header p {
+  font-style: italic;
+  color: #555;
+}
+
+/* Navigation */
+nav {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+nav a {
+  color: #2a2a2a;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.gallery img {
   max-width: 100%;
+  width: 250px;
   border: 1px solid #ccc;
-  margin: 10px 0;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Articles */
+article {
+  margin-bottom: 20px;
+}
+
+article h3 {
+  font-family: "Courier New", monospace;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #666;
 }

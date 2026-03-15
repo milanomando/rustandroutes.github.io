@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Rust And Routes</title>
   <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <header>
@@ -11,16 +12,36 @@
     <p>Dispatches from the road & everyday life</p>
   </header>
 
+  <nav>
+    <a href="#photos">Photos</a> |
+    <a href="#notes">Notes</a> |
+    <a href="#contact">Contact</a>
+  </nav>
+
   <main>
-    <section>
+    <section id="photos">
       <h2>Recent Photos</h2>
-      <img src="images/photo1.jpg" alt="Hiking view">
-      <img src="images/photo2.jpg" alt="Jeep adventure">
+      <div class="gallery">
+        <img src="images/photo1.jpg" alt="Photo 1">
+        <img src="images/photo2.jpg" alt="Photo 2">
+      </div>
     </section>
 
-    <section>
-      <h2>Notes</h2>
-      <p>March 15, 2026 — Went on a hike today...</p>
+    <section id="notes">
+      <h2>Notes & Journal</h2>
+      <article>
+        <h3>March 15, 2026</h3>
+        <p>Went on a hike today — the views were incredible. The Jeep handled the backroads like a champ.</p>
+      </article>
+      <article>
+        <h3>March 10, 2026</h3>
+        <p>Experimented with a new film camera. Loving the grain and color tones!</p>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>You can reach me at <a href="mailto:hello@rustandroutes.com">hello@rustandroutes.com</a></p>
     </section>
   </main>
 
