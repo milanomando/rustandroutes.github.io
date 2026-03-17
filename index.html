@@ -3,50 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <title>Rust And Routes</title>
-  <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
-    <h1>Rust And Routes</h1>
-    <p>Dispatches from the road & everyday life</p>
-  </header>
 
-  <nav>
-    <a href="#photos">Photos</a> |
-    <a href="#notes">Notes</a> |
-    <a href="#contact">Contact</a>
-  </nav>
+<header>
+  <h1>Rust And Routes</h1>
+  <p>Dispatches from the road & everyday life</p>
+</header>
 
-  <main>
-    <section id="photos">
-      <h2>Recent Photos</h2>
-      <div class="gallery">
-        <img src="images/photo1.jpg" alt="Photo 1">
-        <img src="images/photo2.jpg" alt="Photo 2">
-      </div>
-    </section>
+<nav>
+  <a href="#posts">Posts</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-    <section id="notes">
-      <h2>Notes & Journal</h2>
-      <article>
-        <h3>March 15, 2026</h3>
-        <p>Went on a hike today — the views were incredible. The Jeep handled the backroads like a champ.</p>
-      </article>
-      <article>
-        <h3>March 10, 2026</h3>
-        <p>Experimented with a new film camera. Loving the grain and color tones!</p>
-      </article>
-    </section>
+<main>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>You can reach me at <a href="mailto:hello@rustandroutes.com">hello@rustandroutes.com</a></p>
-    </section>
-  </main>
+<section id="posts">
 
-  <footer>
-    <p>&copy; 2026 Rust And Routes</p>
-  </footer>
+  <article class="post">
+    <h2>March 16, 2026 — The Amelia Island Concours d'Elegance</h2>
+
+    <p>
+      March 6th and 7th, 2026 was the first time I attended the Amelia Island Concours - and will certainly not be the last.
+    </p>
+
+    <div class="gallery">
+      <img src="images/amelia-1.jpg" alt="Amelia">
+      <img src="images/amelia-porsche.jpg" alt="Lone Porsche">
+      <img src="images/amelia-fiat500.jpg" alt="Fiat 500 chop top">
+    </div>
+
+    <p>
+      Brought the K1000 along and shot a couple rolls of film.
+    </p>
+
+    <div class="gallery">
+      <img src="images/amelia-sl300(2).jpg" alt="Film camera">
+      <img src="images/amelia-sl300.jpg" alt="Trail">
+    </div>
+	
+	<div class="gallery">
+	  <img src="images/amelia-mclaren2.jpg" alt="Mclaren MP4/10">
+	</div>
+	
+	<div class="gallery">
+	  <img src="images/amelia-mclaren1.jpg" alt="Mclaren MP4/10">
+	  <img src="images/amelia-porsche8.jpg" alt="#8 Racing 911">
+	</div>
+	
+	<p>
+      And my personal favorite...
+    </p>
+	
+	<div class="gallery">
+	  <img src="images/amelia-f40.jpg" alt="Ferarri F40">
+	</div>
+
+  </article>
+
+
+</section>
+
+
+<!--<section id="contact">
+  <h2>Contact</h2>
+  <p>You can reach me at 
+    <a href="mailto:hello@rustandroutes.com">hello@rustandroutes.com</a>
+  </p>
+</section>-->
+
+</main>
+
+<footer>
+  <p>© 2026 Rust And Routes</p>
+</footer>
+
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <span id="close">&times;</span>
+  <img id="lightbox-img">
+</div>
+
+<script>
+
+const images = document.querySelectorAll(".gallery img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+images.forEach(img => {
+  img.onclick = () => {
+    lightbox.style.display = "flex";
+    lightboxImg.src = img.src;
+  };
+});
+
+document.getElementById("close").onclick = () => {
+  lightbox.style.display = "none";
+};
+
+</script>
+
 </body>
 </html>
