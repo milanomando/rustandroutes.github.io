@@ -55,6 +55,20 @@ const GTV6 = {
 
 const POSTS = [
   {
+    title: "First Fall Drive in the M240i",
+    date: "2026-10-11",
+    place: "Log Hollow Overlook, Blue Ridge Parkway",
+    with: "BMW M240i · Pentax K-S1",
+    tags: ["routes"],
+    body: [
+      "Amazing firsts last weekend. First drive of the fall, and first drive in the M240i.  We got pretty lucky with the traffic up to the parkway. Highway 178 up to 215 was the perfect route for that afternoon.",
+      [{ src: "2026-10-11-m240i-log-hollow.jpg", alt: "The M240i at Log Hollow Overlook, elevation 4,445 feet" }],
+      [{ src: "2026-10-11-lineup-log-hollow.jpg", alt: "The lineup at the overlook" }]
+      // When the video is edited, add a comma after the last photo and paste:
+      // { youtube: "https://www.youtube.com/watch?v=XXXXXXXXXXX" }
+    ]
+  },  
+{
     title: "Drive up to Highlands NC, and a hike on the way back",
     date: "2026-03-22",
     place: "Highlands, NC",
