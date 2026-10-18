@@ -4,131 +4,38 @@
   <meta charset="UTF-8">
   <title>Rust And Routes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dispatches from the road & everyday life">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-  <h1>Rust And Routes</h1>
-  <p>Dispatches from the road & everyday life</p>
+  <h1><a href="#/">Rust And Routes</a></h1>
+  <p>Dispatches from the road &amp; everyday life</p>
 </header>
 
-<nav>
-  <a href="#posts">Posts</a>
-  <a href="#contact">Contact</a>
-</nav>
+<nav id="nav" aria-label="Sections"></nav>
+<div id="subnav" aria-label="Subsections"></div>
 
-<main>
-
-<section id="posts">
-  
-  <article class="post">
-    <h2>March 22nd, 2026 — Drive up to Highlands NC, and a hike on the way back</h2>
-
-    <p>
-      Took the Z3 on her first mountain drive this year
-    </p>
-
-		<div class="gallery">
-      <img src="images/3.22.26 hike and drive (1).jpg" alt="Z3">
-		</div>
-	<p>
-      Stopped off on the way back for a brief 9 mile hike...
-    </p>
-		<div class="gallery">
-			<img src="images/3.22.26 hike and drive (2).jpg" alt="River by the trail">
-			<img src="images/3.22.26 hike and drive (7).jpg" alt="Tested long exposure times on the iPhone">
-			<img src="images/3.22.26 hike and drive (6).jpg" alt="Beach near the river">
-		</div>
-	<p>
-      About halfway through the hike was a small trail that went very steeply downwards. Following it down, and going over some sketchy terrain led to almost a cliff-like trail. I had to cross it while holding onto the roots and the wall, but the hidden waterfall was worth the payoff
-    </p>
-		<div class="gallery">
-			<img src="images/3.22.26 hike and drive (4).jpg" alt="The pathway">
-			<img src="images/3.22.26 hike and drive (3).jpg" alt="Waterfall">
-		</div>
-	
- </article>
- 
-  <article class="post">
-    <h2>March 6th, 2026 — The Amelia Island Concours d'Elegance</h2>
-
-    <p>
-      March 6th and 7th, 2026 was the first time I attended the Amelia Island Concours - and will certainly not be the last.
-    </p>
-
-    <div class="gallery">
-      <img src="images/amelia-1.jpg" alt="Amelia">
-      <img src="images/amelia-porsche.jpg" alt="Lone Porsche">
-      <img src="images/amelia-fiat500.jpg" alt="Fiat 500 chop top">
-    </div>
-
-    <p>
-  Brought the K1000 along and shot a couple rolls of film.
-	</p>
-
-<div class="gallery">
-    <img src="images/amelia-sl300(2).jpg" alt="Film camera">
-    <img src="images/amelia-sl300.jpg" alt="Trail">
-</div>
-<div class="gallery">
-    <img src="images/amelia-mclaren1.jpg" alt="Mclaren MP4/10">
-    <img src="images/amelia-porsche8.jpg" alt="#8 Racing 911">
-</div>
-	
-	<p>
-      And my personal favorite...
-    </p>
-	
-	<div class="gallery">
-	  <img src="images/amelia-f40.jpg" alt="Ferarri F40">
-	</div>
-
-  </article>
-
-
-</section>
-
-
-<!--<section id="contact">
-  <h2>Contact</h2>
-  <p>You can reach me at 
-    <a href="mailto:hello@rustandroutes.com">hello@rustandroutes.com</a>
-  </p>
-</section>-->
-
-</main>
+<main id="app"></main>
 
 <footer>
-  <p>© 2026 Rust And Routes</p>
+  <p>No ads. No feed. No algorithm.</p>
+  <p>&copy; <span id="year"></span> Rust And Routes</p>
 </footer>
 
-
-<!-- LIGHTBOX -->
-<div id="lightbox">
-  <span id="close">&times;</span>
-  <img id="lightbox-img">
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button id="close" aria-label="Close">&times;</button>
+  <button id="prev" aria-label="Previous photo">&#8249;</button>
+  <img id="lightbox-img" alt="">
+  <button id="next" aria-label="Next photo">&#8250;</button>
+  <p id="cap"></p>
 </div>
 
-<script>
-
-const images = document.querySelectorAll(".gallery img");
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
-
-images.forEach(img => {
-  img.onclick = () => {
-    lightbox.style.display = "flex";
-    lightboxImg.src = img.src;
-  };
-});
-
-document.getElementById("close").onclick = () => {
-  lightbox.style.display = "none";
-};
-
-</script>
-
+<script src="posts.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
