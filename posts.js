@@ -54,6 +54,70 @@ const GTV6 = {
 };
 
 const POSTS = [
+  
+  {
+    title: "Back in Yosemite",
+    date: "2026-09-25",
+    place: "Yosemite National Park, CA",
+    with: "Pentax K-S1",
+    tags: ["hikes", "travel"],
+    cover: "2026-09-25-yosemite-valley.jpg",
+    body: [
+      [{ src: "2026-09-25-yosemite-valley.jpg", alt: "The valley, with El Capitan on the left and Half Dome in the distance" }],
+      "Felt right to be back in Yosemite. I couldn't believe it had been over 7 years. Last time I saw this view, I was about to go on the first camping trip  (and first real hike), of many.",
+      [{ src: "2026-09-25-yosemite-climbers-el-cap.jpg", alt: "Climbers on the face of El Capitan" }],
+      "Other than the hiking and camping, this trip really inspired me to get back into climbing. I'm not saying I can climb El Cap, but I won't know unless I try.",
+      [{ src: "2026-09-25-yosemite-forest.jpg", alt: "A small forest tucked into the dry landscape above the valley" }],
+      [{ src: "2026-09-25-yosemite-deer.jpg", alt: "Two deer on the trail, one still spotted" }],
+      "After ascending thousands of feet out of the valley, well past the completely dried up Yosemite Falls, we stumbled upon a small forest amongst the desert landscape - and met two friends up there.",
+      [
+        { src: "2026-09-25-yosemite-crow-1.jpg", alt: "A crow diving upside down against the clouds" },
+        { src: "2026-09-25-yosemite-crow-2.jpg", alt: "Two crows over the granite slopes" },
+        { src: "2026-09-25-yosemite-crow-3.jpg", alt: "A crow banking through the clouds" }
+      ],
+      "Speaking of friends, we got lucky enough to witness some crows putting on a show for us - including some upside down flying!",
+      "The view from the top was incredible and intimidating. I could not believe how far up we had hiked in such a short time. Unfortunately due to the dryness, our plan to refill water was bust, and we had to call it before we could make the haul to north dome. It was tempting, but the risk wasn't worth it. The final view we had was still well worth it.",
+      [{ src: "2026-09-25-yosemite-view-from-the-top.jpg", alt: "The view down into Yosemite Valley from the top" }]
+    ]
+  },
+{
+    title: "Back at the Petersen",
+    date: "2026-09-23",
+    place: "Petersen Automotive Museum, Los Angeles, CA",
+    with: "Pentax K-S1",
+    tags: ["cars", "travel"],
+    body: [
+      "Just a few favorites from my (second!) trip to Petersen in LA",
+      [{ src: "2026-09-23-petersen-db5.jpg", alt: "The Aston Martin DB5 from the 007 films" }],
+      [{ src: "2026-09-23-petersen-fast-furious.jpg", alt: "Cars from The Fast and the Furious, with the green Eclipse on the right" }],
+      [{ src: "2026-09-23-petersen-lancia-037.jpg", alt: "The Lancia 037 in Martini Racing livery" }],
+      [{ src: "2026-09-23-petersen-rexy.jpg", alt: "Rexy, the green number 77 Porsche race car" }]
+    ]
+  },
+  {
+    title: "Chasing Andromeda in Joshua Tree",
+    date: "2026-09-20",
+    place: "Joshua Tree, CA",
+    with: "Pentax K-S1 · 300mm lens",
+    tags: ["astro"],
+    cover: "2026-09-20-joshua-tree-andromeda-edited.jpg",
+    body: [
+      [{ src: "2026-09-20-joshua-tree-blurry.jpg", alt: "My first attempt, with the stars out of focus" }],
+      "I tried my hand at some astrophotography in Joshua tree in September. I was lucky to have a low light situation, but not so lucky that there was a half moon out. My first attempt was rather sad, but it didn't stop me.",
+      "I got some decent pictures of the moon, since it was pretty obvious in the sky. I decided to head to bed, and wait out the moon, with a 1:15am alarm to get started on my real mission: get a picture of Andromeda.",
+      [
+        { src: "2026-09-20-joshua-tree-moon.jpg", alt: "The half moon over Joshua Tree" },
+        { src: "2026-09-20-joshua-tree-milky-way.jpg", alt: "A faint Milky Way across the night sky" }
+      ],
+      [{ src: "2026-09-20-joshua-tree-andromeda-first.jpg", alt: "My first image of Andromeda, the small glow near the center" }],
+      "I had a lot of throw away images in between, but with my 300mm lens (and cropped filter) I was limited with my exposure time. I managed to get this first image of Andromeda!",
+      [
+        { src: "2026-09-20-joshua-tree-andromeda-edited.jpg", alt: "Final Andromeda, touched up in darktable" },
+        { src: "2026-09-20-joshua-tree-andromeda-final.jpg", alt: "Final Andromeda, before editing" }
+      ],
+      "Finally, I dialed in as best I could and I got this image. On the right side is one which I touched up a bit in darktable. It's not much, but it's a start!"
+    ]
+  },
   {
     title: "First Fall Drive in the M240i",
     date: "2026-10-11",
