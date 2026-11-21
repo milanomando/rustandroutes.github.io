@@ -54,6 +54,47 @@ const GTV6 = {
 };
 
 const POSTS = [
+  {
+    title: "Andromeda, Take Two",
+    date: "2026-11-09",
+    place: "My back patio (Bortle 6)",
+    with: "Pentax K-S1 · Rokinon 135mm f/2 · Manfrotto MT055XPRO3 · Ricoh O-GPS2",
+    tags: ["astro"],
+    body: [
+      [{ src: "2026-11-09-patio-andromeda.jpg", alt: "Andromeda from the back patio, nearly 400 stacked 10s exposures, Nov 8th and 9th" }],
+      "I was finally able to improve upon last time. I used my new equipment to get this picture of andromeda - much better than the last!!! Took these in a bortle 6 (my back patio) and combined nearly 400 photos of 10s exposure shots. I'm very happy with the result, and will find a new target on the next new moon night."
+    ]
+  },
+  {
+    title: "The Pictures That Sold Me",
+    date: "2026-08-13",
+    place: "Raleigh, NC",
+    tags: ["gtv6"],
+    body: [
+      [{ src: "2026-08-13-gtv6-seller-front.jpg", alt: "The first look" }],
+      "I'm going to preface this with the fact that, for years, I've been telling my dad I'll be the proud owner of a Busso engine one day. The usual response was along the lines of: \"It's more work than it's worth, they're hard to find in good shape, or a Spider is a much better move.\" I won't deny any of those being true, but it didn't change my mind - I was set.",
+      [
+        { src: "2026-08-13-gtv6-seller-side.jpg", alt: "Side profile" },
+        { src: "2026-08-13-gtv6-seller-rear.jpg", alt: "From the back" }
+      ],
+      "So when my dad stumbled upon this GTV6, with a 3.0 (!!!) in it, I knew it would be mine, and I think he did too.",
+      [
+        { src: "2026-08-13-gtv6-seller-engine-bay.jpg", alt: "Engine bay" },
+        { src: "2026-08-13-gtv6-seller-hood-up.jpg", alt: "Hood up" }
+      ],
+      "He's called me many times about Alfas he's found, and we've always talked about getting them, and working on them, but then quickly moved on to the next interesting listing. This time was different.",
+      [
+        { src: "2026-08-13-gtv6-seller-dash.jpg", alt: "Dash" },
+        { src: "2026-08-13-gtv6-seller-gauges.jpg", alt: "Gauges" },
+        { src: "2026-08-13-gtv6-seller-seats.jpg", alt: "Seats, with sheepskin covers" }
+      ],
+      "I saw this first set of photos and my mind was made. I worked everything out, checked out the car myself, and immediately made arrangements to pick it up.",
+      [
+        { src: "2026-08-13-gtv6-seller-hatch.jpg", alt: "Hatch open" },
+        { src: "2026-08-13-gtv6-seller-wheel.jpg", alt: "Front wheel" }
+      ]
+    ]
+  },
   
   {
     title: "Back in Yosemite",
